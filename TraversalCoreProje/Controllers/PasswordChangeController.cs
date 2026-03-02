@@ -51,7 +51,7 @@ namespace TraversalCoreProje.Controllers
             client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
             client.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            client.Authenticate("traversalcore07@gmail.com", "phosugacglkuxtjo");
+            client.Authenticate("traversalcore07@gmail.com", "apikey");
             client.Send(mimeMessage);
             client.Disconnect(true);
 
